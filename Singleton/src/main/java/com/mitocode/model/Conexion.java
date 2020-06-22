@@ -2,7 +2,7 @@ package com.mitocode.model;
 
 public class Conexion {
 	
-	//Declaración
+	//DECLARACION DEL METODO ESTATICO, DEBE SER STATIC DEBIDO A QUE LOS METODOS QUE LO VAN A USAR TAMBIEN SON STATIC
 	private static Conexion instancia;
 	//private static Conexion instancia = new Conexion();
 	
@@ -12,7 +12,7 @@ public class Conexion {
 	}
 	
 	//Para obtener la instancia unicamente por este metodo
-	//Notese la palabra reservada "static" hace posible el acceso mediante Clase.metodo
+	// Notese la palabra reservada "static" hace posible el acceso mediante Clase.metodo
 	public static Conexion getInstancia() {
 		if(instancia == null) {
 			instancia = new Conexion();
@@ -20,14 +20,14 @@ public class Conexion {
 		return instancia;
 	}
 	
-	//Método de prueba
+	//MÃ©todo de prueba
 	public void conectar() {
-		System.out.println("Me conecté a la BD");
+		System.out.println("Me conectÃ© a la BD");
 	}
 	
-	//Método de prueba
+	//MÃ©todo de prueba
 	public void desconectar() {
-		System.out.println("Me desconecté de la BD");
+		System.out.println("Me desconectÃ© de la BD");
 	}
 
 }
