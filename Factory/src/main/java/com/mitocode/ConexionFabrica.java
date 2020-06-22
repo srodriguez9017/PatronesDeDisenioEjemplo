@@ -8,7 +8,8 @@ import com.mitocode.inter.impl.ConexionSQLServer;
 import com.mitocode.inter.impl.ConexionVacia;
 
 public class ConexionFabrica {
-
+	
+	//ESTE METODO LO QUE HACE ES DEVOLVER UNA INSTANCIA DEL OBJETO QUE SESOLICITE  MEDIANTE EL IDENTIFICADOR
 	public IConexion getConexion(String motor) {
 		if (motor == null) {
 			return new ConexionVacia();
